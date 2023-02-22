@@ -15,7 +15,7 @@ app.route('/json')
         const mySecret = process.env['MESSAGE_STYLE']
         let msg = "";
         if (mySecret === "uppercase")
-            msg = "Hello json".toUpperCase();
+            msg = "HELLO JSON";
         else
             msg = "Hello json";
         res.json({ "message": msg })
