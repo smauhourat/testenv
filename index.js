@@ -7,12 +7,12 @@ const app = express();
 
 // Create GET request
 app.get("/", (req, res) => {
-    res.send("Express on Vercel" + process.env.MESSAGE_STYLE);
+    res.send("Express on Vercel" + process.env['MESSAGE_STYLE']);
 });
 
 app.route('/json')
     .get(function (req, res) {
-        const mySecret = process.env.MESSAGE_STYLE
+        const mySecret = process.env['MESSAGE_STYLE']
         let msg = "";
         if (mySecret === "uppercase")
             msg = "Hello json".toUpperCase();
