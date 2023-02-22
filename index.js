@@ -7,7 +7,7 @@ const app = express();
 
 // Create GET request
 app.get("/", (req, res) => {
-    res.send("Express on Vercel");
+    res.send("Express on Vercel" + process.env.MESSAGE_STYLE);
 });
 
 app.route('/json')
